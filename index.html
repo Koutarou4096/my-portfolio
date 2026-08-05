@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ポートフォリオ的な</title>
+  <link rel="stylesheet" href="./hey!.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Google Fontsの呼び出しというかなんというか-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Manrope:wght@200..800&family=Noto+Sans+JP:wght@100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <center>
+        <h1>MY PORTFOLIO</h1>
+      </center>
+    </header>
+    <button id="menu_button" class="menu_button">☰</button>
+    <nav id="side_menu" class="side_menu">
+      <ul>
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="game.html">ゲーム班</a></li>
+        <li><a href="illust.html">イラスト班</a></li>
+        <li><a href="cad.html">CAD班</a></li>
+        <li><a href="media.html">メディア班</a></li>
+      </ul>
+    </nav>
+
+
+    <h2>自己紹介</h2>
+    <p>
+      春日康佑っていいます。
+      トライデントコンピュータ専門学校に通ってます
+    </p>
+
+    <h2>経験・実績</h2>
+    <p></p>
+    <h6>作品例</h6>
+    <p>※画像をクリックすると拡大できます。※できません</p>
+    <div class="sakuhin">
+      <div class="works">
+        <div class="work-item" data-title="ONLINE MD EDITOR" data-desc="ライブプレビュー・自動保存・PDF化や印刷機能を備えた、WEBブラウザで動作するシンプルかつ軽量なマークダウンエディター"
+          data-tech="HTML / CSS / JavaScript" data-full="images/works/markdown-editor-full.png">
+          <img src="images/mdeditor.png" alt="ONLINE MD EDITOR" class="work-thumb">
+          <p class="work-title">ONLINE MD EDITOR</p>
+        </div>
+      </div>
+    </div>
+    <div id="kakudai" class="kakudai">
+      <span class="close">&times;</span>
+      <div class="kakudai-content">
+        <img id="kakudai-img" src="images/mdeditor.png" alt="">
+        <div class="kakudai-info">
+          <h3 id="kakudai-title"></h3>
+          <p id="kakudai-desc"></p>
+          <p id="kakudai-tech"></p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <center>&copy; Kosuke Kasuga All rights reserved.</center>
+    </footer>
+    <script src="script.js"></script>
+  </div>
+</body>
